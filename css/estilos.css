@@ -1,0 +1,39 @@
+body{
+    background-color: royalblue;
+    font-family: 'Times New Roman', Times, serif;
+}
+.content, .button{
+    position: fixed;
+    right: 15px;
+    bottom: 15px;
+    z-index: 1;
+}
+.button{
+    z-index: 999;
+    width: 43px;
+    height: 43px;
+    background: crimson;
+    border-radius: 100%;
+    box-shadow: 1px 3px 10px 0 rgba(0,0,0,0.3);
+    cursor: pointer;
+}
+.button:before{
+    position: absolute;
+    top: 20px;
+    left: 9px;
+    content: '';
+    width: 25px;
+    height: 5px;
+    background: #fff;
+    transform: rotate(90deg);
+}
+
+.button:after{
+    position: absolute;
+    top: 20px;
+    left: 9px;
+    content: '';
+    width: 25px;
+    height: 5px;
+    background: #fff;
+}
